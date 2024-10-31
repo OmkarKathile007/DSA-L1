@@ -57,6 +57,18 @@ public class Main {
         return temp;
     }
 
+     public static int BinaryExpo1(int a,int b){
+        int res=1;
+        while(b>0){
+            if((b&1)==1){
+                res=(res * a)%MOD;
+            }
+            b=b>>1;
+            a=(a*a)%MOD;
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
         System.out.println("Hello world!");
     }
