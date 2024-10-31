@@ -21,6 +21,7 @@ public class Main {
         }
 
     }
+    // gcd using iterative approach
      public static int gcd(int a,int b){
 
         while(b!=0){
@@ -31,6 +32,8 @@ public class Main {
 
         return a;
     }
+
+    // gcd using recursive 
     public static int gcd1(int a,int b){
 
        if(b==0) return a;
@@ -40,7 +43,7 @@ public class Main {
 //    public static final int MOD=100005;
 
     public static final int MOD = 1000000007; // Set MOD to your desired modulus
-
+  /// Binary Exponentiaition using Recursive
     public static int BinaryExpo(int a, int b) {
         int temp = 1;
         if (b == 0) {
@@ -56,7 +59,7 @@ public class Main {
         }
         return temp;
     }
-
+  //// Binary Exponentiation using Iterative Approach
      public static int BinaryExpo1(int a,int b){
         int res=1;
         while(b>0){
